@@ -61,6 +61,7 @@ function openProductDetail() {
         mobileMenu.classList.add('inactive');
     }
 
+
     productDetail.classList.toggle('inactive');
 }
 
@@ -88,8 +89,6 @@ function toggleShoppingCart() {
 }
 
 
-
-
 // Lista de productos en el main
 const productList = [];
 
@@ -102,27 +101,26 @@ function almacenarProductoEnArray(name, price, image) {
     })
 }
 
+
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
 almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
 almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
 almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
 almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
 almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
 almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
 
 
@@ -141,6 +139,7 @@ almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg
 </div>
 */
 
+
 // Misma card construida con JS:
 
 function renderProducts(array) {
@@ -150,6 +149,7 @@ function renderProducts(array) {
     
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image)
+        productImg.classList.add('product-card__img')
         productImg.addEventListener('click', openProductDetail)
     
         const productInfo = document.createElement('div');
@@ -174,24 +174,7 @@ function renderProducts(array) {
             productInfo.append(productInfoDiv, figureAddCart);
                 productInfoDiv.append(productPrice, productName);
                 figureAddCart.appendChild(imgAddCart);
+
     }
 }
 renderProducts(productList);
-
-
-/* <aside class="add-product-detail inactive">
-<div class="product-detail-close">
-  <img src="" alt="close">
-</div>
-<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-<div class="product-info">
-  <p>$35,00</p>
-  <p>Bike</p>
-  <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-  <button class="primary-button add-to-cart-button">
-    <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-    Add to cart
-  </button>
-</div>
-</aside>
-*/
