@@ -168,7 +168,7 @@ function renderProducts(array) {
         const figureAddCart = document.createElement('figure');
     
         const imgAddCart = document.createElement('img');
-        imgAddCart.setAttribute('src', '/icons/bt_add_to_cart.png')
+        imgAddCart.setAttribute('src', './icons/bt_add_to_cart.png')
     
     
         cardsContainer.appendChild(productCard);
