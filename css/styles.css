@@ -39,10 +39,14 @@ body {
   .menu {
     display: none;
     padding-left: 24px;
+    height: fit-content;
+    margin: auto 0;
   }
   .logo {
     width: 100px;
+    height: fit-content;
     padding-left: 24px;
+    margin: auto 0;
   }
   .navbar-left ul,
   .navbar-right ul {
@@ -192,6 +196,7 @@ body {
     width: 360px;
     padding: 24px;
     padding-top: 28px;
+    margin-top: -54px;
     box-sizing: border-box;
     right: 0;
     background: var(--white);
@@ -276,7 +281,7 @@ body {
     width: 360px;
     padding-bottom: 24px;
     position: fixed;
-    margin-top: 28px;
+    margin-top: -36px;
     right: 0;
     background: var(--white);
     border-radius: 6px;
@@ -291,6 +296,7 @@ body {
     z-index: 2;
     padding: 12px;
     border-radius: 50%;
+    cursor: pointer;
   }
   .product-detail-close:hover {
     cursor: pointer;
@@ -346,7 +352,7 @@ body {
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
-    margin-top: 30px;
+    margin-top: 86px;
   }
   .product-card {
     width: 240px;
@@ -388,7 +394,7 @@ body {
 
   /*Media Queries*/
 
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     .menu {
       display: block;
     }

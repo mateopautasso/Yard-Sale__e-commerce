@@ -8,6 +8,7 @@ const shoppingCartMenu = document.querySelector('.shopping-cart-container');
 const productDetail = document.querySelector('.add-product-detail');
 const iconCloseProductDetail = document.querySelector('.product-detail-close img')
 const imgAddProductDetail = document.querySelector('.img-add-product-detail');
+const shoppingCartContainerArrow = document.querySelector('.shopping-cart-container__arrow')
 
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -15,6 +16,7 @@ navbarEmail.addEventListener('click', toggleDesktopMenu);
 iconMenu.addEventListener('click', toggleMobileMenu);
 iconShoppingCart.addEventListener('click', toggleShoppingCart)
 iconCloseProductDetail.addEventListener('click', closeProductDetail)
+shoppingCartContainerArrow.addEventListener('click',toggleShoppingCart)
 
 
 function toggleDesktopMenu() {
@@ -103,25 +105,25 @@ function almacenarProductoEnArray(name, price, image) {
 
 
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
-almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', './images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', './images/refrigeratorPink.jpg');
+almacenarProductoEnArray('Aesthetic Shelf', '39.49', './images/AestheticShelf.jpg');
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
-almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', './images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', './images/refrigeratorPink.jpg');
+almacenarProductoEnArray('Aesthetic Shelf', '39.49', './images/AestheticShelf.jpg');
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
-almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', './images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', './images/refrigeratorPink.jpg');
+almacenarProductoEnArray('Aesthetic Shelf', '39.49', './images/AestheticShelf.jpg');
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
-almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', './images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', './images/refrigeratorPink.jpg');
+almacenarProductoEnArray('Aesthetic Shelf', '39.49', './images/AestheticShelf.jpg');
 almacenarProductoEnArray('Bike', '69.99', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', '/images/refrigeratorBlue.jpg');
-almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', '/images/refrigeratorPink.jpg');
-almacenarProductoEnArray('Aesthetic Shelf', '39.49', '/images/AestheticShelf.jpg');
+almacenarProductoEnArray('Blue Igloo Refrigerator', '89.99', './images/refrigeratorBlue.jpg');
+almacenarProductoEnArray('Pink Igloo Refrigerator', '89.99', './images/refrigeratorPink.jpg');
+almacenarProductoEnArray('Aesthetic Shelf', '39.49', './images/AestheticShelf.jpg');
 
 
 /*
@@ -166,7 +168,7 @@ function renderProducts(array) {
         const figureAddCart = document.createElement('figure');
     
         const imgAddCart = document.createElement('img');
-        imgAddCart.setAttribute('src', '/icons/bt_add_to_cart.svg')
+        imgAddCart.setAttribute('src', '/icons/bt_add_to_cart.png')
     
     
         cardsContainer.appendChild(productCard);
