@@ -156,6 +156,7 @@ body {
 
   .mobile-menu {
     position: fixed;
+    top: 30px;
     width: 100%;
     padding: 24px;
     padding-top: 0px;
