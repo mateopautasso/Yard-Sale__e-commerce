@@ -6,7 +6,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const iconShoppingCart = document.querySelector('.navbar-shopping-cart img');
 const shoppingCartMenu = document.querySelector('.shopping-cart-container');
 const productDetail = document.querySelector('.add-product-detail');
-const iconCloseProductDetail = document.querySelector('.product-detail-close img')
+const iconCloseProductDetail = document.querySelector('.product-detail-close')
 const imgAddProductDetail = document.querySelector('.img-add-product-detail');
 const shoppingCartContainerArrow = document.querySelector('.shopping-cart-container__arrow')
 
